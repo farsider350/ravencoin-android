@@ -30,9 +30,9 @@
 #include <assert.h>
 #include <pthread.h>
 
-#define RAVENCOIN_PRIVKEY             128
-#define RAVENCOIN_PRIVKEY_TEST        239
-#define RAVENCOIN_PRIVKEY_REGTEST     239
+#define RAVENCOIN_PRIVKEY             127
+#define RAVENCOIN_PRIVKEY_TEST        127
+#define RAVENCOIN_PRIVKEY_REGTEST     127
 
 #if __BIG_ENDIAN__ || (defined(__BYTE_ORDER__) && __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__) ||\
     __ARMEB__ || __THUMBEB__ || __AARCH64EB__ || __MIPSEB__

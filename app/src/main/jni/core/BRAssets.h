@@ -14,7 +14,7 @@
 #include "ChainParams.h"
 
 #ifdef TESTNET
-#define ASSET_ACTIVATION        6048
+#define ASSET_ACTIVATION        600000000
 #elif REGTEST
 #define ASSET_ACTIVATION        0
 #else

@@ -40,8 +40,8 @@
 #endif
 
 //#define TARGET_TIMESPAN   (14*24*60*60) // the targeted timespan between difficulty target adjustments    // 2016 bitcoin blocks
-#define TARGET_TIMESPAN   ((14*24*6) * 60) // the targeted timespan between difficulty target adjustments   // 2016 ravencoin blocks
-#define DGW_TARGET_TIMESPAN   (1 * 60) // the targeted timespan between difficulty target adjustments       // 1 ravencoin block
+#define TARGET_TIMESPAN   (1 * 60) // the targeted timespan between difficulty target adjustments   //
+#define DGW_TARGET_TIMESPAN   (2 * 60) // the targeted timespan between difficulty target adjustments       // 2 minutes - 1 block
 
 inline static int _ceil_log2(int x) {
     int r = (x & (x - 1)) ? 1 : 0;

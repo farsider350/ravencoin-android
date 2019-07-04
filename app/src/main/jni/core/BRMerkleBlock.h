@@ -34,7 +34,7 @@
 extern "C" {
 #endif
 
-#define BLOCK_DIFFICULTY_INTERVAL           2016    // number of blocks between difficulty target adjustments
+#define BLOCK_DIFFICULTY_INTERVAL           1    // number of blocks between difficulty target adjustments
 #define DGW_BLOCK_DIFFICULTY_INTERVAL       1       // number of blocks between difficulty target adjustments after DGW3
 #define BLOCK_UNKNOWN_HEIGHT                INT32_MAX
 #define BLOCK_MAX_TIME_DRIFT                (2*60*60) // the furthest in the future a block is allowed to be timestamped
@@ -42,11 +42,11 @@ extern "C" {
 #define DGW_PAST_BLOCKS                     180
 
 #ifdef TESTNET
-#define DGW_START_BLOCK         6048
+#define DGW_START_BLOCK         1
 #elif REGTEST
-#define DGW_START_BLOCK         0
+#define DGW_START_BLOCK         1
 #else
-#define DGW_START_BLOCK         338778
+#define DGW_START_BLOCK         1
 #endif
 
 typedef struct {

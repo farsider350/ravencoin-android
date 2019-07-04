@@ -244,7 +244,7 @@ size_t BRAddressFromScriptPubKey(char *addr, size_t addrLen, const uint8_t *scri
         if (l != 20) d = NULL;
         if (d) memcpy(&data[1], d, 20);
     }
-#warning TODO: doesn't support PSH count for assets tx will be >3
+#warning //TODO: doesn't support PSH count for assets tx will be >3
     else if (count == 3 && *elems[0] == OP_HASH160 && *elems[1] == 20 && *elems[2] == OP_EQUAL) {
         // pay-to-script-hash scriptPubKey
         data[0] = RAVENCOIN_SCRIPT_ADDRESS;

@@ -47,19 +47,19 @@
 #include "BRPeerManager.h"
 
 #if TESTNET
-#define MAGIC_NUMBER 0x544e5652  //RVNT - Reverse from chainparams.cpp
+#define MAGIC_NUMBER 0x493b4ecf  //RVNT - Reverse from chainparams.cpp
 #elif REGTEST
-#define MAGIC_NUMBER 0x574f5243
+#define MAGIC_NUMBER 0x493b4ecf
 #else
-#define MAGIC_NUMBER 0x4e564152  //RAVN - Reverse from chainparams.cpp
+#define MAGIC_NUMBER 0x493b4ecf  //RAVN - Reverse from chainparams.cpp
 #endif
 
 #define HEADER_LENGTH      24
 #define MAX_MSG_LENGTH     0x02000000
 #define MAX_GETDATA_HASHES 50000
 #define ENABLED_SERVICES   0ULL  // we don't provide full blocks to remote nodes
-#define PROTOCOL_VERSION   70020
-#define MIN_PROTO_VERSION  70020 // peers earlier than this protocol version not supported (need v0.9 txFee relay rules)
+#define PROTOCOL_VERSION   70208
+#define MIN_PROTO_VERSION  70208 // peers earlier than this protocol version not supported (need v0.9 txFee relay rules)
 #define LOCAL_HOST         ((UInt128) { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xff, 0xff, 0x7f, 0x00, 0x00, 0x01 })
 #define CONNECT_TIMEOUT    3.0
 #define MESSAGE_TIMEOUT    10.0

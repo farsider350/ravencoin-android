@@ -48,7 +48,7 @@ extern "C" {
 #define TXIN_SEQUENCE        UINT32_MAX  // sequence number for a finalized tx input
     
 #define CORBIES              1000000LL
-#define MAX_MONEY            (21000000*1000LL*CORBIES)
+#define MAX_MONEY            (21000000*CORBIES)
     
 #define BR_RAND_MAX          ((RAND_MAX > 0x7fffffff) ? 0x7fffffff : RAND_MAX)
     
